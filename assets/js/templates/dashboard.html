@@ -1,0 +1,43 @@
+<div class="pagewrap">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="/PartyUpBeta/" class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.7 228.1"><path d="M120.7,0H0v55.3h121.2c14.8,0,26.8,12,26.8,26.7v0c0,14.8-12,26.8-26.8,26.8H0v32.9V164v64.1h63.3V164h57.3  c45.3,0,82-36.7,82-82v0C202.7,36.7,166,0,120.7,0z"></path></svg>
+    </a>
+    <div class="actions">
+      <button class="compose"><img src="assets/img/icons/write.svg"></button>
+      <button class="notification"><img src="assets/img/icons/notif.svg"></button>
+      <button class="messages"><img src="assets/img/icons/group.svg"></button>
+      <button class="logout"><img src="assets/img/icons/logout.svg"></button>
+    </div>
+    <a class="user-avatar" href="/PartyUpBeta/#/settings">
+      <img src="http://localhost/PartyUpBeta/api/avatars/{{user.avatarurl}}" alt="">
+    </a>
+  </nav>
+  <main class="colwrap"></main>
+</div>
+
+<!-- Modal -->
+<div class="modal-outer">
+  <form class="post-form" novalidate>
+    <h1>What's Happening?</h1>
+    <div class="form-content">
+      <label> Message: <textarea name="message" required=""></textarea></label>
+      <label> Number of Players: <input type="number" name="size" min="1" value="1" required=""></label>
+      <label> Game: <input type="text" name="game" placeholder="Game name here..." required=""></label>
+      <label> Tags
+      <select name="tags" multiple="" required="">
+        <option value="1">BossFight</option>
+        <option value="2">Mic</option>
+        <option value="3">Raid</option>
+        <option value="4">Training</option>
+        <option value="5">1v1</option>
+      </select>
+      </label>
+      <button class="btn" type="submit">SEND</button>
+    </div>
+  </form>
+  <div class="panel-outer"></div>
+  <div class="panel-outer hide"></div>
+</div>

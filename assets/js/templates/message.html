@@ -1,0 +1,9 @@
+{{#empty}}
+  {{#messages}}
+    <div class="chatitem {{#sender}}self{{/sender}}">
+      <img src="http://localhost/PartyUpBeta/api/avatars/{{user.avatar}}">
+      <strong>{{user.username}}</strong>
+      <p>{{message}}</p>
+    </div>
+  {{/messages}}
+{{/empty}}

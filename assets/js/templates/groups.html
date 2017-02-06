@@ -1,0 +1,13 @@
+<h3>Your Groups</h3>
+{{#host}}
+  {{#game}}
+    <a class="group-item" href="#" data-id="{{id}}">{{game}} - {{hostname}}</a>
+  {{/game}}
+{{/host}}
+
+<h3>Joined Groups</h3>
+{{#member}}
+  {{#game}}
+    <a class="group-item" href="#" data-id="{{id}}">{{game}} - {{hostname}}</a>
+  {{/game}}
+{{/member}}

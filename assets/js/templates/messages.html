@@ -1,0 +1,12 @@
+<!-- Message Container -->
+<div class="messages">
+  {{#empty}} {{>message}} {{/empty}}
+</div>
+
+<!-- Message form -->
+<form class="message-form">
+  <textarea name="message"></textarea>
+  {{#xbox}} <button class="gamertag" type="button">{{xbox}}</button> {{/xbox}}
+  {{#psn}}<button class="gamertag psn" type="button">{{psn}}</button>{{/psn}}
+  <button class="submit" type="submit">Send</button>
+</form>

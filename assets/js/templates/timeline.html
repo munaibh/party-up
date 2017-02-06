@@ -1,0 +1,18 @@
+{{#posts}}
+  <li data-post="{{id}}">
+    <img class="js-user-action" src="api/avatars/{{user.avatar}}" alt="{{user.username}}">
+    <strong>{{user.username}}<span>{{game}}</span></strong>
+    <p>
+      {{text}} <br>
+      {{#tags}} <a class="tag">{{name}}</a>{{/tags}}
+    </p>
+    <div class="expand">
+      <div class="player-container">
+      {{#players}} <img src="api/avatars/{{avatarurl}}" alt="{{username}}"> {{/players}}
+      </div>
+      {{^host}}<button class="add-cta">+</button>{{/host}}
+    </div>
+    <span>{{date}}</span>
+    <a href="#" class="action">Expand</a>
+  </li>
+{{/posts}}

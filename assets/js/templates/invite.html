@@ -1,0 +1,26 @@
+<!-- Recieved Invites -->
+<h3>Interests</h3>
+<ul class="interests">
+  {{#host}}
+    <li data-id="{{id}}">
+      <img src="http://localhost/PartyUpBeta/api/avatars/{{user.avatar}}">
+      <p>{{game}}</p>
+      <p>{{user.username}}</p>
+      <button class="accept">Accept</button>
+      <button class="decline">Decline</button>
+    </li>
+  {{/host}}
+</ul>
+
+<!-- Pending Invites -->
+<h3>Pending</h3>
+<ul class="pending">
+  {{#player}}
+    {{#status}}
+      <li data-id="{{id}}">
+      <p>{{game}}</p>
+      <button class="cancel">Cancel</button>
+    </li>
+    {{/status}}
+  {{/player}}
+</ul>
