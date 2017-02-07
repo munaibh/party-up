@@ -1,0 +1,49 @@
+.panel-outer:last-of-type {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+
+  &.hide {
+    animation: slideOut 0.3s forwards;
+  }
+
+  &.show {
+    left: 430px;
+    background: #F9F9F9;
+    animation: slideIn 0.3s forwards;
+  }
+}
+
+
+.panel-outer h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 4rem;
+  background: #efefef;
+}
+
+a.group-item {
+  display: block;
+  padding: 1.5rem 3rem;
+  font-weight: 600;
+
+  &:hover, &.active {
+    background: #00a2c5;
+    color: white;
+  }
+
+}
+
+
+.chatitem img {
+    width: 34px;
+    float: left;
+    position: absolute;
+    left: 0;
+}
+
+.chatitem {
+    padding: 0rem 0 0 3rem;
+    position: relative;
+}

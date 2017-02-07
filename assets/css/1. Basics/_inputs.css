@@ -1,0 +1,10 @@
+input[type="text"], input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 1.25em;
+  border: 1px solid #bababa;
+  font-size: 1.1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}

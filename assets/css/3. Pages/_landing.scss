@@ -1,0 +1,22 @@
+.landing {
+  background-image: url(../img/landing-bg.jpg);
+  background-size: cover;
+}
+
+
+.tagline {
+  width: 90%;
+  max-width: 50rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  @include position(absolute, 50% null null 50%);
+
+  #st0 { fill: #BCBABA; }
+  #st1 { fill: $brand-color; }
+
+  .start {
+    font-size: 1.57rem;
+    margin-top: 1.5em;
+  }
+
+}

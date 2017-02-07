@@ -1,0 +1,115 @@
+.register-pane {
+    width: 50%;
+    position: relative;
+    min-width: 486px;
+    max-width: 624px;
+    color: #434245;
+    text-align: center;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    @include position(absolute, 50% null null 50%);
+    transform: translate(-50%, -50%);
+}
+
+.register-pane > .container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.register-pane form {
+    width: 100%;
+    padding: 0 12%;
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+    white-space: initial;
+    height: auto;
+    overflow: auto;
+}
+
+.register-pane form.hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.register-pane form h1 {
+    line-height: 3pc;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 39px;
+}
+
+label {
+    position: relative;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    display: block;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px 0;
+    background: $brand-color;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    line-height: 1.2rem;
+    font-weight: 900;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    white-space: nowrap;
+    margin: 25px 0;
+    padding: 14px 2pc 1pc;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+input[type="text"], input[type="password"], select {
+    font-size: 1.25rem;
+    line-height: normal;
+    padding: 0.75rem;
+    border: 1px solid #C5C5C5;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    color: #555459;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 0.5rem;
+    transition: box-shadow 1s ease, border-color 0.4s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: none;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+label.error {
+    position: absolute;
+    top: 3px;
+    margin: 0;
+    right: 0;
+    font-size: 14px;
+    color: orange;
+    right: 5px;
+    animation: opacity 0.3s linear;
+}

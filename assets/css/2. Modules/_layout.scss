@@ -1,0 +1,9 @@
+.pagewrap {
+  position: relative;
+  @include size(100vw 100vh);
+  transition: width 0.3s ease;
+
+  &.nav-open {
+    width: 80%;
+  }
+}

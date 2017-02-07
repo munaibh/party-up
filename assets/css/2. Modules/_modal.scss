@@ -1,0 +1,85 @@
+.modal-outer {
+  @include position(absolute, 0 0 0 0);
+  visibility: hidden;
+
+  &.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+}
+
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounceOut {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.show.modal-outer {
+  visibility: visible;
+  background: rgba(0,0,0,0.95);
+}
+
+.signin-form, .post-form {
+  padding: 3rem;
+  background: white;
+  visibility: hidden;
+  animation: bounceOut 0.3s forwards;
+
+}
+
+.show.form .signin-form, .show.form .post-form {
+  visibility: visible;
+  animation: bounceIn 0.3s forwards cubic-bezier(0, 0, 0.04, 1.71);
+}
+
+
+.panel-outer {
+  background: white;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 100%;
+  z-index: 2;
+  animation: slideOut 0.3s forwards;
+
+}
+
+.show.panel .panel-outer {
+  visibility: visible;
+  animation: slideIn 0.3s forwards;
+}
+
+
+//
+//
+// .form {
+//   padding: 3rem;
+//   background: white;
+//   visibility: hidden;
+//   animation: bounceOut 0.3s forwards;
+// }
+//
+// .show .form {
+//   visibility: visible;
+//   animation: bounceIn 0.3s forwards cubic-bezier(0, 0, 0.04, 1.71);
+// }
