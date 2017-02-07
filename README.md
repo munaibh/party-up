@@ -7,7 +7,7 @@ The results of the implementation are shown below, these screenshots are taken f
 ![Landing Page](/readme/example/landing.png)
 ![Timeline Page](/readme/example/timeline.png)
 
-A full colleciton of screenshots of the application when it was live can be found [here](readme/example/)
+A full collection of screenshots of the application when it was live can be found [here](readme/example/).
 
 ---
 
